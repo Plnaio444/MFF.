@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+</head>
+<style>
+    body {
+        background-color: gray;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    tr {
+        background-color: darkgrey;
+    }
+
+    input {
+        background-color: lightgray;
+        font-size: 150%;
+        text-align: center;
+    }
+</style>
+<body>
+    <b><h1>회원가입하기</h1></b>
+<form action="login.php" method="get" target="blank">
+<hr color="black">
+<table border="1">
+    <tr>
+        <td colspan="2" style="text-align: center;">
+                <b>회원가입</b>
+        </td>
+    </tr>
+
+    <tr>
+        <td>이름</td>
+        <td><input type="text" size="17"></td>
+    </tr>
+
+    <tr>
+        <td>사용자ID</td>
+        <td><input type="text" size="17"></td>
+    </tr>
+
+    <tr>
+        <td>암호</td>
+        <td><input type="text" size="16"></td>
+    </tr>
+    
+    <tr>
+        <td>암호확인</td>
+        <td><input type="text" size="16"></td>
+    </tr>
+
+    <tr>
+        <td>계좌번호</td>
+        <td><input type="text" size="6">
+            - <input type="text" size="7"></td>
+    </tr>
+
+    <tr>
+        <td>전화번호</td>
+        <td><input type="text" size="3">
+            - <input type="text" size="4">
+            - <br><input type="text" size="4"></td>
+    </tr>
+
+    <tr>
+        <td>성별</td>
+        <td><input type="radio" name="sung"  
+            value="girl">남자
+            <input type="radio" name="sung" value="boy">여자</td>
+    </tr>
+
+    <tr>
+        <td>자주 띄울 코디</td>
+        <td><select name="job" id="job">
+            <label for="job"></label>
+                <option value="base">선택해주세요</option>
+                <option value="Musician">뮤지션</option>
+                <option value="Boy-Band">아이돌</option>
+                <option
+                value="Girlgroup">걸그룹</option>
+                <option
+                value="Street-fashion">스트릿</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2" style="text-align: center;">
+            <input type="submit" value="가입신청">
+            <input type="reset" value="취소">
+        </td>
+    </tr>
+</table>
+</body>
+</html>
